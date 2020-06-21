@@ -12,14 +12,42 @@ cohort_36 = Cohort("Day Cohort 36")
 cohort_37 = Cohort("Day Cohort 37")
 cohort_39 = Cohort("Day Cohort 39")
 
-holden = Student("Holden", "Parker", "@holdenp", cohort_37)
-daniel = Student("Daniel", "Fuqua", "@danielf", cohort_39)
-trey = Student("Trey", "Suiter", "@treys", cohort_36)
-willy = Student("Willy", "Metcalf", "@willym", cohort_37)
+holden = Student()
+holden.first_name = "Holden"
+holden.last_name = "Parker"
+holden.slack_handle = "@holdenp"
+holden.cohort = cohort_37
+daniel = Student()
+daniel.first_name = "Daniel"
+daniel.last_name = "Fuqua"
+daniel.slack_handle = "@danielf"
+daniel.cohort = cohort_39
+trey = Student()
+trey.first_name = "Trey"
+trey.last_name = "Suiter"
+trey.slack_handle = "@treys"
+trey.cohort = cohort_36
+willy = Student()
+willy.first_name = "Willy"
+willy.last_name = "Metcalf"
+willy.slack_handle = "@willym"
+willy.cohort = cohort_37
 
-steve = Instructor("Steve", "Brownlee", "@coach", cohort_37, "dad jokes")
-adam = Instructor("Adam", "Sheaffer", "@adams", cohort_39, "digressing")
-mo = Instructor("Mo", "Silvera", "@momoney", cohort_36, "interpretive dance")
+steve = Instructor("dad jokes")
+steve.first_name = "Steve"
+steve.last_name = "Brownlee"
+steve.slack_handle = "@coach"
+steve.cohort = cohort_37
+adam = Instructor("disgressing")
+adam.first_name = "Adam"
+adam.last_name = "Sheaffer"
+adam.slack_handle = "@adams"
+adam.cohort = cohort_39
+mo = Instructor("interpretive dance")
+mo.first_name = "Mo"
+mo.last_name = "Silvera"
+mo.slack_handle = "@momoney"
+mo.cohort = cohort_36
 
 steve.assign_exercise(holden, martins_aquarium)
 steve.assign_exercise(holden, kennels)
